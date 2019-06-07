@@ -1,0 +1,29 @@
+version: 2
+jobs:
+  build_win_32:
+    docker:
+      - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run:
+          name: Build for Windows
+          command: |
+            bash ci/setup_common_requirements.sh
+            bash ci/build_win_i686.sh
+  build_win_64:
+    docker:
+      - image: ubuntu:18.04
+    steps:
+      - checkout
+      - run:
+          name: Build for Windows 64
+          command: |
+            bash ci/setup_common_requirements.sh
+            bash ci/build_win64.sh
+workflows:
+  version: 2
+  build_all:
+    jobs:
+      - build_win_32
+      - build_win_64
+      
