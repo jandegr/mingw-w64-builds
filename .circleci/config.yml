@@ -6,9 +6,9 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Build for Windows
+          name: Build for Windows 32
           command: |
-            bash ci/setup_common_requirements.sh
+            apt-get update && apt-get install -y mingw-w64
             bash ci/build_win_i686.sh
   build_win_64:
     docker:
@@ -18,7 +18,7 @@ jobs:
       - run:
           name: Build for Windows 64
           command: |
-            bash ci/setup_common_requirements.sh
+            apt-get update && apt-get install -y mingw-w64
             bash ci/build_win64.sh
 workflows:
   version: 2
