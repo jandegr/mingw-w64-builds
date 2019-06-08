@@ -14,7 +14,7 @@ jobs:
       - run:
           name: Build for Windows 32   
           command: | 
-            sudo chmod +x ./build-zlib-1.2.8.sh
+            chmod +x ./build-zlib-1.2.8.sh
             bash build.sh
   build_win_64:
     docker:
