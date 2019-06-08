@@ -6,10 +6,12 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Build for Windows 32
+          name: setup for Windows 32
           command: |
             apt-get update && apt-get install -y mingw-w64
             bash config.sh
+      - run:
+          name: Build for Windows 32   
           command: build.sh
   build_win_64:
     docker:
