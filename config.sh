@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export BASE_DIR="`pwd`"
+export BASE_DIR="./"
 export ARCHIVE_DIR=${BASE_DIR}/archives
 export SOURCE_DIR=${BASE_DIR}/source
 export PATCH_DIR=${BASE_DIR}/patches
