@@ -12,7 +12,7 @@ jobs:
             bash config.sh
       - run:
           name: Build for Windows 32   
-          command: build.sh
+          command: bash build.sh
   build_win_64:
     docker:
       - image: ubuntu:18.04
