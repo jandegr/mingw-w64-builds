@@ -13,10 +13,12 @@ jobs:
             ls -la
       - run:
           name: Build for Windows 32   
-          command: bash build.sh
+          command: | 
+            sudo chmod +x ./build-zlib-1.2.8.sh
+            bash build.sh
   build_win_64:
     docker:
-      - image: ubuntu:18.04
+      - image: ubuntu:19.04
     steps:
       - checkout
       - run:
