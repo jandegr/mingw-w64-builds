@@ -1,9 +1,8 @@
 #!/bin/bash
 
-export BASE_DIR="./"
-export ARCHIVE_DIR=${BASE_DIR}/archives
-export SOURCE_DIR=${BASE_DIR}/source
-export PATCH_DIR=${BASE_DIR}/patches
+export ARCHIVE_DIR=archives
+export SOURCE_DIR=source
+export PATCH_DIR=patches
 
 export MINGW64_DIR='/usr/i686-w64-mingw32'
 
