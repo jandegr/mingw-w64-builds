@@ -1,10 +1,10 @@
 #!/bin/bash
 
-. ./config.sh
+# . ./config.sh
 
-./check_folders.sh
+# ./check_folders.sh
 
-./check_prereqs.sh
+# ./check_prereqs.sh
 
 export LD="${CC}"
 
