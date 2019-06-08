@@ -7,6 +7,9 @@
 # ./check_prereqs.sh
 
 export LD="${CC}"
+export ARCHIVE_DIR=archives
+export SOURCE_DIR=source
+export PATCH_DIR=patches
 
 URL="http://zlib.net/zlib-1.2.8.tar.gz"
 ARCHIVE_NAME="zlib-1.2.8.tar.gz"
