@@ -11,6 +11,8 @@ jobs:
             apt-get update && apt-get install -y mingw-w64 curl
             bash config.sh
             ls -la
+            bash check_folders.sh
+            ls -la
       - run:
           name: Build for Windows 32   
           command: | 
